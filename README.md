@@ -1,2 +1,2 @@
 # meta-frontend-capstone
-Meta frontend developer capstone project
+Codebase for the meta frontend developer capstone project
