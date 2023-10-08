@@ -3,6 +3,7 @@ import Row  from 'react-bootstrap/Row';
 import Col  from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Footer from '../components/Footer';
 
 import NavBar from "../components/NavBar";
 
@@ -99,7 +100,7 @@ function Specials(){
           <Button variant='primary' className='px-4'>Menu
           </Button>
         </div>
-        <Row className=' justify-content-center gx-3 gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-4'>
+        <Row className=' justify-content-center gx-3 gy-4 row-cols-1 row-cols-sm-2 row-cols-xl-4'>
           {specials.map((menuItem)=>{
             return (
             <Col key={menuItem.id}> 
@@ -169,7 +170,7 @@ function Testimonials(){
     <section className='testimonies'>
       <Container className='col-md-9 px-3'>
         <h4 className='text-center mb-3 mt-3'>Testimonials</h4>
-        <Row className='row-cols-1 row-cols-md-3 g-4'>
+        <Row className='row-cols-1 row-cols-lg-3 g-4'>
           { 
             testimonials.map((testimonial)=>{
               return(
@@ -184,71 +185,7 @@ function Testimonials(){
     </section>
   )
 }
-//Footer
-function Footer(){
-  return(
-    <footer className='mt-5 py-4'>
-      <Container className='col-md-9'>
-        <Row className='justify-content-center row-cols-1 row-cols-md-4'>
-          <Col xs={1} className='align-self-center mb-3'>
-            <img src="img/lemon.png" alt="lemon logo" width='30px' />
-          </Col>
-          <Col>
-            <h5 className='text-center text-muted text-md-start mb-1'>Navigation</h5>
-            <ul className='col-10 col-md-12 mx-auto d-flex justify-content-between d-md-block'>
-              <li className='mb-2'><a href="/">Home</a></li>
-              <li className='mb-2'><a href="/about">About</a></li>
-              <li className='mb-2'><a href="/menu">Menu</a></li>
-              <li className='mb-2'><a href="/reservations">Reservations</a></li>
-            </ul>
-          </Col>
-          <Col>
-            <h5 className='text-center text-muted text-md-start mb-1'>Contact</h5>
-            <div className='d-flex justify-content-center col-10 col-md-12 mx-auto d-md-block'>
-              <p className='mb-2 me-2'>Bukoto &mdash; Kampala</p>
-              {/* <p className='mb-2'>info@littlelemon</p> */}
-              <p className='mb-2'>+256 789123459</p>
-            </div >
-          </Col>
-          <Col>
-            <h5 className='text-center text-muted text-md-start mt-2'>Social Media</h5>
-          
-            <ul className='d-flex col-11 col-md-12 mx-auto justify-content-between d-md-block text-center text-md-start' >
-              <li className='mb-2 '> 
-                <a href="facebook.com" >
-                <img src="/img/fb.png" width='20px' className='me-2' alt="" />
-                Facebook
-                </a>
-              </li>
-              <li className='mb-2'>
-                <a href="twitter.com" >
-                <img src="/img/twitter.png" width='20px' className='me-2' alt="" />
-                Twitter
-                </a>
-              </li>
-              
-              <li className='mb-2 '>
-                <a href="whatsapp.com" >
-                <img src="/img/whatsapp.png" width='20px' className='me-2' alt="" />
-                Whatsapp
-                </a>
-              </li>
-              <li className='mb-2'>
-                <a href="twitter.com">
-                <img src="/img/instagram.png" width='20px'className='me-2' alt="" />
-                Instagram
-                </a>
-              </li>
-            </ul>
-           
-           
-            
-          </Col>
-        </Row>
-      </Container>
-    </footer>
-  )
-}
+
 
 export default function Home(){
   return(

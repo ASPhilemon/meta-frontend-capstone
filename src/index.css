@@ -56,7 +56,7 @@ a{
   font-weight: bold;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .card{
     height: 350px;
   }
@@ -75,5 +75,14 @@ footer a, footer p{
 } */
 
 .navbar{
-  background-color: wheat !important;
+  background-color: #f5deb3 !important;
+}
+
+.footer-heading{
+  color: #F4CE14 !important;
+  font-size: 1.2rem;
+}
+
+.hero img{
+  border-radius: 5px;
 }
