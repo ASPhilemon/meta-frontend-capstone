@@ -47,7 +47,7 @@ function MenuItem({name, price, description, imgUrl}) {
           {description}
         </Card.Text>
         <LinkContainer to ="/menu" >
-          <a href="/menu" className='card-link stretched-link mt-auto'>
+          <a  className='card-link stretched-link mt-auto'>
             Order for delivery 
             <img
               src="/img/bicycle.png"

@@ -41,25 +41,25 @@ export default function Footer(){
           
             <ul className='d-flex col-11 col-md-12 mx-auto justify-content-center d-md-block text-center text-md-start' >
               <li className='mb-2 me-2'> 
-                <a href="facebook.com" >
+                <a href="https://facebook.com" target='blank'>
                 <img src="/img/fb.png" width='20px' className='me-2' alt="" />
                 Facebook
                 </a>
               </li>
               <li className='mb-2 me-2'>
-                <a href="twitter.com" >
+                <a href="https://twitter.com" target='_blank'>
                 <img src="/img/twitter.png" width='20px' className='me-2' alt="" />
                 Twitter
                 </a>
               </li>
               <li className='mb-2 me-2 '>
-                <a href="whatsapp.com" >
+                <a href="https://whatsapp.com" target='_blank' >
                 <img src="/img/whatsapp.png" width='20px' className='me-2' alt="" />
                 Whatsapp
                 </a>
               </li>
               <li className='mb-2 me-2'>
-                <a href="twitter.com">
+                <a href="https://instagram.com" target='_blank'>
                 <img src="/img/instagram.png" width='20px'className='me-2' alt="" />
                 Instagram
                 </a>
