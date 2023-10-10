@@ -13,7 +13,7 @@ export default function Construction({page}){
           alt="" 
           />
       </div>
-      <p className="text-center lead col-sm-8 col-md-5 mt-2">This page is currently under construction. Please come back later</p>
+      <p className="text-center lead col-sm-8 col-md-5 mt-2">This page is currently under construction. Please come back later.</p>
     </Container>
   )
 }
