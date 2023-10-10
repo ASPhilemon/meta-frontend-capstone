@@ -1,11 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Row  from 'react-bootstrap/Row';
 import Col  from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
 //Footer
 export default function Footer(){
   return(
-    <footer className='mt-5 py-4'>
+    <footer className=' py-4'>
       <Container className='col-md-9'>
         <Row className='justify-content-center row-cols-1 row-cols-md-4'>
           <Col xs={1} className='align-self-center mb-3'>
@@ -14,10 +15,18 @@ export default function Footer(){
           <Col>
             <h5 className='footer-heading text-center text-muted text-md-start mb-1'>Navigation</h5>
             <ul className='col-10 col-md-12 mx-auto d-flex justify-content-center d-md-block'>
-              <li className='mb-2 me-2'><a href="/">Home</a></li>
-              <li className='mb-2 me-2'><a href="/about">About</a></li>
-              <li className='mb-2 me-2'><a href="/menu">Menu</a></li>
-              <li className='mb-2 me-2'><a href="/reservations">Reservations</a></li>
+              <li className='mb-2 me-2'>
+                <Link to="/" ><a>Home</a></Link>
+              </li>
+              <li className='mb-2 me-2'>
+                <Link to="/about" ><a>About</a></Link>
+              </li>
+              <li className='mb-2 me-2'>
+                <Link to="/menu" ><a>Menu</a></Link>
+              </li>
+              <li className='mb-2 me-2'>
+                <Link to="/reservations" ><a>Reservations</a></Link>
+              </li>
             </ul>
           </Col>
           <Col>
@@ -43,7 +52,6 @@ export default function Footer(){
                 Twitter
                 </a>
               </li>
-              
               <li className='mb-2 me-2 '>
                 <a href="whatsapp.com" >
                 <img src="/img/whatsapp.png" width='20px' className='me-2' alt="" />

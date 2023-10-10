@@ -20,7 +20,7 @@ a{
 .nav-link:hover{
   color: #C06919;
 }
-.hero{
+.hero, .reservations-lead{
   background-color: #495E57;
   color: white;
 }
@@ -85,4 +85,39 @@ footer a, footer p{
 
 .hero img{
   border-radius: 5px;
+}
+
+.nav-link.active{
+  color: #C06919 !important;
+  font-weight: 900;
+}
+
+@keyframes construction-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .construction {
+    animation: construction-spin infinite 20s linear;
+  }
+}
+
+
+.construction-container{
+  /* height: 400px; */
+  text-align: center;
+ 
+  min-height: 70vh;
+}
+
+.construction{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+
 }

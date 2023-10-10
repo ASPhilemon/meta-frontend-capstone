@@ -3,9 +3,7 @@ import Row  from 'react-bootstrap/Row';
 import Col  from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Footer from '../components/Footer';
-
-import NavBar from "../components/NavBar";
+import { LinkContainer } from 'react-router-bootstrap';
 
 //Hero
 function Hero(){
@@ -14,10 +12,12 @@ function Hero(){
       <Container className='col-md-9'  >
         <Row className=' align-items-end justify-content-between py-5 gx-0'>
           <Col>
-            <h1 class='little-lemon'>Little Lemon</h1>
+            <h1 className='little-lemon'>Little Lemon</h1>
             <h4 className='mb-4'>Chicago</h4>
             <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-            <Button variant="primary" className='mt-3 btn-reserve'>Reserve a Table</Button>
+            <LinkContainer to="/reservations" >
+              <Button variant="primary" className='mt-3 btn-reserve'>Reserve a Table</Button>
+            </LinkContainer>
           </Col>
           <Col className='d-none d-sm-inline text-end'>
             <img 
@@ -46,15 +46,18 @@ function MenuItem({name, price, description, imgUrl}) {
         <Card.Text className='text-lead'>
           {description}
         </Card.Text>
-        <a href='/menu' className='card-link stretched-link mt-auto'>
-          Order for delivery 
-          <img
-            src="/img/bicycle.png"
-            width='20px'
-            height='13.4px'
-            className='ms-2' 
-            alt="bicycle" />
-          </a>
+        <LinkContainer to ="/menu" >
+          <a href="/menu" className='card-link stretched-link mt-auto'>
+            Order for delivery 
+            <img
+              src="/img/bicycle.png"
+              width='20px'
+              height='13.4px'
+              className='ms-2' 
+              alt="bicycle" />
+            </a>
+        </LinkContainer>
+        
       </Card.Body>
     </Card>
   );
@@ -97,8 +100,10 @@ function Specials(){
       <Container className='col-md-9 px-3'>
         <div className='d-flex align-items-center mb-4'>
           <h5 className='me-5'>Weekly Specials</h5>
-          <Button variant='primary' className='px-4'>Menu
+          <LinkContainer to = "/menu" >
+            <Button variant='primary' className='px-4'>Menu
           </Button>
+          </LinkContainer>
         </div>
         <Row className=' justify-content-center gx-3 gy-4 row-cols-1 row-cols-sm-2 row-cols-xl-4'>
           {specials.map((menuItem)=>{
@@ -118,7 +123,7 @@ function Specials(){
 //Testimonial
 function Testimonial({name, rating, comment, imgUrl}){
   let stars = []
-  for(let i=0; i < rating; i++) stars.push(<img src='img/star.png' width='15px'/>)
+  for(let i=0; i < rating; i++) stars.push(<img src='img/star.png' key={i} width='15px' alt='' />)
   return(
     <>
       <div className="d-flex align-items-center">
@@ -168,7 +173,7 @@ function Testimonials(){
   ]
   return(
     <section className='testimonies'>
-      <Container className='col-md-9 px-3'>
+      <Container className='col-md-9 px-3 mb-5'>
         <h4 className='text-center mb-3 mt-3'>Testimonials</h4>
         <Row className='row-cols-1 row-cols-lg-3 g-4'>
           { 
@@ -190,11 +195,9 @@ function Testimonials(){
 export default function Home(){
   return(
     <>
-      <NavBar/>
       <Hero/>
       <Specials/>
       <Testimonials/>
-      <Footer/>
     </>
   )
 }
