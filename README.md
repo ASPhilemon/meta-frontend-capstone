@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Deployment available at [littlelemon](https://project-littlelemon.asphilemon.com). 
+Deployment available at [littlelemon](https://project-meta-frontend-capstone.asphilemon.com). 
 
 ## Available Scripts
 
