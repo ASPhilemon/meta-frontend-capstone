@@ -10,7 +10,7 @@ const __dirname = dirname(__filename);
 const app = express();
 
 //Middleware
-app.use(express.static('react-app/build'))
+app.use(express.static(__dirname + '/react-app/build'))
 
 //Serve index.html for all other get requests
 app.get('*', (req, res) => {
