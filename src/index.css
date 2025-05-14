@@ -1,0 +1,123 @@
+ul, ol{
+  list-style: none;
+  padding: 0;
+}
+p{
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration: none;
+}
+.navbar{
+  background-color: #AFDDCE;
+}
+.navbar a{
+  color: #495E57;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.nav-link:hover{
+  color: #C06919;
+}
+.hero, .reservations-lead{
+  background-color: #495E57;
+  color: white;
+}
+
+.btn-primary{
+  background-color: #C06919;
+  border: #C06919;
+}
+.btn-reserve{
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+.little-lemon{
+  color: #F4CE14;
+}
+.card-link{
+  color: #C06919;
+}
+
+.weekly-specials{
+  padding: 20px 0;
+}
+
+.card{
+  transition: transform 0.3s;
+}
+.card:hover{
+  transform: translateY(-5px);
+}
+
+.menu-price{
+  color: #C06919;
+  font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  .card{
+    height: 350px;
+  }
+}
+
+footer{
+  background-color: #495E57;
+}
+
+footer a, footer p{
+  color: white;
+}
+
+/* .card-body{
+  background-color: wheat !important;
+} */
+
+.navbar{
+  background-color: #f5deb3 !important;
+}
+
+.footer-heading{
+  color: #F4CE14 !important;
+  font-size: 1.2rem;
+}
+
+.hero img{
+  border-radius: 5px;
+}
+
+.nav-link.active{
+  color: #C06919 !important;
+  font-weight: 900;
+}
+
+@keyframes construction-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .construction {
+    animation: construction-spin infinite 20s linear;
+  }
+}
+
+
+.construction-container{
+  /* height: 400px; */
+  text-align: center;
+ 
+  min-height: 70vh;
+}
+
+.construction{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+
+}
