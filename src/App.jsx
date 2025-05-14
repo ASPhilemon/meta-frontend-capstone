@@ -8,10 +8,8 @@ import Reservations from "./pages/Reservations";
 import MenuConstruction from "./pages/Menu";
 import AboutConstruction from "./pages/About";
 
+
 function App() {
-  // useEffect(()=>{
-  //   alert(`Warning! This website is fully responsive. (Powered by React-Bootstrap)`)
-  // })
   return (
     <BrowserRouter>
       <NavBar/>
